@@ -159,48 +159,18 @@ const Services = () => {
                         <p className="text-muted-foreground mb-4 leading-relaxed">
                           {service.description}
                         </p>
-                        <Button 
+                        {/* <Button 
                           variant="outline" 
                           size="sm"
                           className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all"
                         >
                           Learn More
-                        </Button>
+                        </Button> */}
                       </div>
                     </CardContent>
                   </Card>
                 );
               })}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-20 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Ready to Start Your Journey?
-            </h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Let our experienced consultants guide you through every step of your international education journey.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="secondary"
-                className="bg-white text-primary hover:bg-white/90"
-              >
-                <Star className="mr-2 h-5 w-5" />
-                Book Free Consultation
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-primary"
-              >
-                <Headphones className="mr-2 h-5 w-5" />
-                Contact Our Experts
-              </Button>
             </div>
           </div>
         </section>

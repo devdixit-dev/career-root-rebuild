@@ -81,12 +81,6 @@ export function ServiceOptions() {
                     <p className="text-muted-foreground mb-4 leading-relaxed">
                       {service.description}
                     </p>
-                    <Button 
-                      variant="outline" 
-                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all"
-                    >
-                      Learn More
-                    </Button>
                   </div>
                 </CardContent>
               </Card>

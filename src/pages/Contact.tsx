@@ -1,9 +1,9 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { useState } from "react";
-import { 
-  MapPin, Phone, Mail, Clock, Send, 
-  User, MessageCircle, Globe, Building 
+import {
+  MapPin, Phone, Mail, Clock, Send,
+  User, MessageCircle, Globe, Building
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -50,35 +50,31 @@ const Contact = () => {
       icon: MapPin,
       title: "Our Address",
       details: [
-        "Career Root Education Consultancy",
-        "123 Education Street, Business District",
-        "New York, NY 10001, United States"
+        "26, Haribhakti Society, 5, Samarpan Society",
+        "Race Course Rd, Vadodara",
+        "Gujarat 390007"
       ]
     },
     {
       icon: Phone,
       title: "Phone Numbers",
       details: [
-        "Main Office: +1 (555) 123-4567",
-        "Student Support: +1 (555) 123-4568",
-        "Recruitment: +1 (555) 123-4569"
+        "Main Office: +91 79840 99069"
       ]
     },
     {
       icon: Mail,
       title: "Email Addresses",
       details: [
-        "General: info@careerroot.com",
-        "Admissions: admissions@careerroot.com",
-        "Recruitment: hr@careerroot.com"
+        "General: hello@careerroot.in"
       ]
     },
     {
       icon: Clock,
       title: "Business Hours",
       details: [
-        "Monday - Friday: 9:00 AM - 6:00 PM",
-        "Saturday: 10:00 AM - 4:00 PM",
+        "Monday - Friday: 9:00 AM - 5:00 PM",
+        "Saturday: 10:00 AM - 5:00 PM",
         "Sunday: Closed"
       ]
     }
@@ -239,8 +235,8 @@ const Contact = () => {
                       </div>
 
                       {/* Submit Button */}
-                      <Button 
-                        type="submit" 
+                      <Button
+                        type="submit"
                         className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                         size="lg"
                       >
@@ -259,7 +255,7 @@ const Contact = () => {
                     Get in Touch
                   </h2>
                   <p className="text-lg text-muted-foreground">
-                    We're here to help you achieve your educational and career goals. 
+                    We're here to help you achieve your educational and career goals.
                     Reach out to us through any of the following channels.
                   </p>
                 </div>
@@ -293,34 +289,6 @@ const Contact = () => {
                     );
                   })}
                 </div>
-
-                {/* Quick Actions */}
-                <Card className="bg-primary text-primary-foreground">
-                  <CardContent className="p-6 text-center">
-                    <h3 className="text-xl font-bold mb-4">
-                      Need Immediate Assistance?
-                    </h3>
-                    <p className="mb-6 opacity-90">
-                      Our expert consultants are available for urgent queries and emergency support.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-3">
-                      <Button 
-                        variant="secondary"
-                        className="bg-white text-primary hover:bg-white/90"
-                      >
-                        <Phone className="mr-2 h-4 w-4" />
-                        Call Now
-                      </Button>
-                      <Button 
-                        variant="outline"
-                        className="border-white text-white hover:bg-white hover:text-primary"
-                      >
-                        <MessageCircle className="mr-2 h-4 w-4" />
-                        Live Chat
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
               </div>
             </div>
           </div>
@@ -340,17 +308,17 @@ const Contact = () => {
 
             <Card className="overflow-hidden shadow-lg">
               <div className="h-96 bg-gradient-to-br from-primary/20 via-accent/20 to-primary/30 flex items-center justify-center">
-                <div className="text-center text-primary">
-                  <MapPin className="w-16 h-16 mx-auto mb-4" />
-                  <h3 className="text-xl font-bold mb-2">Interactive Map</h3>
-                  <p className="text-muted-foreground">
-                    123 Education Street, Business District<br />
-                    New York, NY 10001, United States
-                  </p>
-                  <Button className="mt-4 bg-primary hover:bg-primary/90">
-                    <Globe className="mr-2 h-4 w-4" />
-                    Get Directions
-                  </Button>
+                <div className="w-full h-96 rounded-xl overflow-hidden shadow-lg">
+                  <iframe
+                    title="Google Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.112684015122!2d73.162845!3d22.306958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8bac7291a3b%3A0x517c93b57be2a8db!2sVadodara!5e0!3m2!1sen!2sin!4v1690567891234!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </div>
             </Card>

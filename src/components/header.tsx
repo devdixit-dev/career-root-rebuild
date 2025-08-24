@@ -4,6 +4,8 @@ import { Menu, X, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lu
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 
+import logo from '../assets/logo.png';
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -19,31 +21,31 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       {/* Mini Navbar */}
-      <div className="bg-primary text-primary-foreground py-2">
+      <div className="bg-primary text-primary-foreground py-4">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <a href="tel:++917984099069">+91 79840 99069</a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@careerroot.com</span>
+                <a href="mailto:hello@careerroot.in">hello@careerroot.in</a>
               </div>
             </div>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-5">
               <a href="#" className="hover:text-accent transition-colors">
-                <Facebook className="h-4 w-4" />
+                <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="hover:text-accent transition-colors">
-                <Twitter className="h-4 w-4" />
+                <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="hover:text-accent transition-colors">
-                <Linkedin className="h-4 w-4" />
+                <Linkedin className="h-5 w-5" />
               </a>
               <a href="#" className="hover:text-accent transition-colors">
-                <Instagram className="h-4 w-4" />
+                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -52,15 +54,11 @@ export function Header() {
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">CR</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-primary">Career Root</h1>
-              <p className="text-xs text-muted-foreground">Education & Career Solutions</p>
+            <div className="w-80 h-10 rounded-lg flex items-center justify-center">
+              <img src={logo} alt="business logo" />
             </div>
           </Link>
 

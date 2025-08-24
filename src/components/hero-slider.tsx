@@ -12,28 +12,24 @@ const slides = [
     image: heroImage1,
     title: "Your Gateway to Global Education",
     subtitle: "Expert guidance for international students seeking world-class education opportunities",
-    cta: "Explore Study Programs"
   },
   {
     id: 2,
     image: heroImage2,
     title: "Study Abroad with Confidence",
     subtitle: "Comprehensive support from application to graduation in top universities worldwide",
-    cta: "Find Your University"
   },
   {
     id: 3,
     image: heroImage3,
     title: "Professional Career Consultation",
     subtitle: "Personalized career guidance and consultation services for your professional growth",
-    cta: "Book Consultation"
   },
   {
     id: 4,
     image: heroImage4,
     title: "International Recruitment Solutions",
     subtitle: "Connecting talented professionals with global career opportunities",
-    cta: "View Opportunities"
   }
 ]
 
@@ -93,12 +89,6 @@ export function HeroSlider() {
                   <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto opacity-90 fade-in visible">
                     {slide.subtitle}
                   </p>
-                  <Button
-                    size="lg"
-                    className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-3 text-lg hover-lift"
-                  >
-                    {slide.cta}
-                  </Button>
                 </div>
               </div>
             </div>
@@ -125,7 +115,7 @@ export function HeroSlider() {
       </Button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
         {slides.map((_, index) => (
           <button
             key={index}

@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Link } from "react-router-dom"
 
 export function AboutPreview() {
   const highlights = [
@@ -45,11 +46,12 @@ export function AboutPreview() {
                 </div>
               ))}
             </div>
-
+            {/* <a href="/about-us" target="_blank">
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground group">
               Learn More About Us
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
+            </a> */}
           </div>
 
           {/* Image & Stats */}

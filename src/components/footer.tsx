@@ -20,14 +20,11 @@ export function Footer() {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-xl">CR</span>
-              </div>
               <div>
                 <h3 className="text-xl font-bold">Career Root</h3>
                 <p className="text-sm opacity-80">Education & Career Solutions</p>
@@ -76,23 +73,24 @@ export function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 mt-0.5 opacity-80" />
                 <div className="text-sm opacity-90">
-                  <p>123 Education Street</p>
-                  <p>Business District</p>
-                  <p>New York, NY 10001</p>
+                  <p>26, Haribhakti Society</p>
+                  <p>5, Samarpan Society</p>
+                  <p>Race Course Rd</p>
+                  <p>Vadodara - 390007</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 opacity-80" />
-                <span className="text-sm opacity-90">+1 (555) 123-4567</span>
+                <a href="tel:+917984099069" className="text-sm opacity-90">+91 79840 99069</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 opacity-80" />
-                <span className="text-sm opacity-90">info@careerroot.com</span>
+                <a href="mailto:hello@careerroot.in" className="text-sm opacity-90">hello@careerroot.in</a>
               </div>
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                 <Globe className="h-5 w-5 opacity-80" />
                 <span className="text-sm opacity-90">www.careerroot.com</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -115,12 +113,12 @@ export function Footer() {
       {/* Copyright */}
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center text-sm opacity-80">
-          <p>© 2024 Career Root. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <p>© 2025 Career Root. All rights reserved.</p>
+          {/* <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</a>
             <a href="#" className="hover:opacity-100 transition-opacity">Terms of Service</a>
             <a href="#" className="hover:opacity-100 transition-opacity">Cookie Policy</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
