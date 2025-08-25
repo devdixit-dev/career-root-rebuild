@@ -25,12 +25,6 @@ const slides = [
     title: "Professional Career Consultation",
     subtitle: "Personalized career guidance and consultation services for your professional growth",
   },
-  {
-    id: 4,
-    image: heroImage4,
-    title: "International Recruitment Solutions",
-    subtitle: "Connecting talented professionals with global career opportunities",
-  }
 ]
 
 export function HeroSlider() {
