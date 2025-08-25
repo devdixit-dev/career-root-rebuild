@@ -8,7 +8,6 @@ export function Footer() {
     { name: "About Us", href: "/about" },
     { name: "What We Offer", href: "/services" },
     { name: "Study Abroad", href: "/study-abroad" },
-    { name: "Recruitment", href: "/recruitment" },
     { name: "Contact Us", href: "/contact" },
   ]
 
@@ -81,11 +80,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 opacity-80" />
-                <a href="tel:+917984099069" className="text-sm opacity-90">+91 79840 99069</a>
+                <a href="tel:+917778978988" className="text-sm opacity-90">+91 77789 78988</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 opacity-80" />
-                <a href="mailto:hello@careerroot.in" className="text-sm opacity-90">hello@careerroot.in</a>
+                <a href="mailto:study@gogpl.in" className="text-sm opacity-90">study@gogpl.in</a>
               </div>
               {/* <div className="flex items-center space-x-3">
                 <Globe className="h-5 w-5 opacity-80" />

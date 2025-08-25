@@ -14,7 +14,6 @@ export function Header() {
     { name: "About Us", href: "/about" },
     { name: "What We Offer", href: "/services" },
     { name: "Study Abroad", href: "/study-abroad" },
-    { name: "Recruitment", href: "/recruitment" },
     { name: "Contact Us", href: "/contact" },
   ]
 
@@ -27,11 +26,11 @@ export function Header() {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <a href="tel:++917984099069">+91 79840 99069</a>
+                <a href="tel:+917778978988">+91 77789 78988</a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:hello@careerroot.in">hello@careerroot.in</a>
+                <a href="mailto:study@gogpl.in">study@gogpl.in</a>
               </div>
             </div>
             <div className="flex items-center space-x-5">

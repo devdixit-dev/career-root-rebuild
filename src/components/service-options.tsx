@@ -34,14 +34,6 @@ const services = [
     icon: Building,
     image: "/api/placeholder/400/250",
     color: "from-orange-500 to-red-500"
-  },
-  {
-    id: 5,
-    title: "HR Staffing",
-    description: "Professional recruitment and staffing solutions for international businesses",
-    icon: Briefcase,
-    image: "/api/placeholder/400/250",
-    color: "from-indigo-500 to-blue-500"
   }
 ]
 
