@@ -8,7 +8,19 @@ import {
   MapPin, ExternalLink 
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+
+import aus_flag from '../assets/maps/aus.jpg';
+import can_flag from '../assets/maps/canada.jpg';
+import fr_flag from '../assets/maps/france.png';
+import gr_flag from '../assets/maps/germany.png';
+import nz_flag from '../assets/maps/nz.jpg';
+import swiss_flag from '../assets/maps/swiss.jpg';
+import usa_flag from '../assets/maps/usa.png';
+import uk_flag from '../assets/maps/uk.png';
+import ireland_flag from '../assets/maps/ireland.png';
+import netherland_flag from '../assets/maps/netherland.png';
+import singapore_flag from '../assets/maps/singapore.png';
+import sweden_flag from '../assets/maps/sweden.png';
 
 const StudyAbroad = () => {
   const [selectedCountry, setSelectedCountry] = useState(null);
@@ -63,7 +75,7 @@ const StudyAbroad = () => {
       id: 1,
       name: "United States",
       code: "US",
-      flag: "🇺🇸",
+      flag: usa_flag,
       universities: "4000+",
       programs: "All Levels",
       intakeMonths: "Aug, Jan, May",
@@ -74,7 +86,7 @@ const StudyAbroad = () => {
       id: 2,
       name: "United Kingdom",
       code: "UK",
-      flag: "🇬🇧",
+      flag: uk_flag,
       universities: "150+",
       programs: "All Levels",
       intakeMonths: "Sep, Jan, May",
@@ -85,7 +97,7 @@ const StudyAbroad = () => {
       id: 3,
       name: "Canada",
       code: "CA",
-      flag: "🇨🇦",
+      flag: can_flag,
       universities: "200+",
       programs: "All Levels",
       intakeMonths: "Sep, Jan, May",
@@ -96,7 +108,7 @@ const StudyAbroad = () => {
       id: 4,
       name: "Australia",
       code: "AU",
-      flag: "🇦🇺",
+      flag: aus_flag,
       universities: "150+",
       programs: "All Levels",
       intakeMonths: "Feb, Jul",
@@ -107,7 +119,7 @@ const StudyAbroad = () => {
       id: 5,
       name: "Germany",
       code: "DE",
-      flag: "🇩🇪",
+      flag: gr_flag,
       universities: "400+",
       programs: "All Levels",
       intakeMonths: "Oct, Apr",
@@ -118,7 +130,7 @@ const StudyAbroad = () => {
       id: 6,
       name: "France",
       code: "FR",
-      flag: "🇫🇷",
+      flag: fr_flag,
       universities: "300+",
       programs: "All Levels",
       intakeMonths: "Sep, Feb",
@@ -129,7 +141,7 @@ const StudyAbroad = () => {
       id: 7,
       name: "Netherlands",
       code: "NL",
-      flag: "🇳🇱",
+      flag: netherland_flag,
       universities: "100+",
       programs: "All Levels",
       intakeMonths: "Sep, Feb",
@@ -140,7 +152,7 @@ const StudyAbroad = () => {
       id: 8,
       name: "New Zealand",
       code: "NZ",
-      flag: "🇳🇿",
+      flag: nz_flag,
       universities: "40+",
       programs: "All Levels",
       intakeMonths: "Feb, Jul",
@@ -151,7 +163,7 @@ const StudyAbroad = () => {
       id: 9,
       name: "Singapore",
       code: "SG",
-      flag: "🇸🇬",
+      flag: singapore_flag,
       universities: "30+",
       programs: "All Levels",
       intakeMonths: "Aug, Jan",
@@ -162,7 +174,7 @@ const StudyAbroad = () => {
       id: 10,
       name: "Ireland",
       code: "IE",
-      flag: "🇮🇪",
+      flag: ireland_flag,
       universities: "50+",
       programs: "All Levels",
       intakeMonths: "Sep, Jan",
@@ -173,7 +185,7 @@ const StudyAbroad = () => {
       id: 11,
       name: "Sweden",
       code: "SE",
-      flag: "🇸🇪",
+      flag: sweden_flag,
       universities: "50+",
       programs: "All Levels",
       intakeMonths: "Aug, Jan",
@@ -184,7 +196,7 @@ const StudyAbroad = () => {
       id: 12,
       name: "Switzerland",
       code: "CH",
-      flag: "🇨🇭",
+      flag: swiss_flag,
       universities: "30+",
       programs: "All Levels",
       intakeMonths: "Sep, Feb",
@@ -267,9 +279,8 @@ const StudyAbroad = () => {
                   onClick={() => setSelectedCountry(country)}
                 >
                   <CardContent className="p-6 text-center">
-                    <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                      {country.flag}
-                    </div>
+                    <img src={country.flag} className="w-full h-40 mb-2 rounded-sm">
+                    </img>
                     <h3 className="text-xl font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                       {country.name}
                     </h3>
