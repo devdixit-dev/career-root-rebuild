@@ -23,6 +23,8 @@ const Contact = () => {
     message: ""
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -38,12 +40,26 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // You would typically send this data to your backend
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  
+  setLoading(true); // Start loading immediately
+  console.log("Form submitted:", formData);
+
+  try {
+    // Simulate async operation (e.g., API call)
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+
+    console.log("Message sent");
+    // Optionally clear form data here
+    // setFormData(initialFormData);
+  } catch (error) {
+    console.error("Error sending message:", error);
+  } finally {
+    setLoading(false); // Stop loading when done
+  }
+};
+
 
   const contactInfo = [
     {
@@ -239,9 +255,10 @@ const Contact = () => {
                         type="submit"
                         className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                         size="lg"
+                        disabled={loading}
                       >
                         <Send className="mr-2 h-5 w-5" />
-                        Send Message
+                        {loading ? 'sending messsage': 'Send Message'}
                       </Button>
                     </form>
                   </CardContent>
